@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>D3: Create an SVG with D3</title>
+		<script type="text/javascript" src="d3.v3.js"></script>
+		<style type="text/css">
+			
+			body {
+				background-color: gray;
+			}
+
+			svg {
+				background-color: white;
+			}
+
+		</style>
+	</head>
+	<body>		
+		<script type="text/javascript">
+			
+			//Create SVG element
+			var svg = d3.select("body")
+						.append("svg")
+						.attr("width", 500)
+						.attr("height", 200);
+
+			svg.append("line")
+				.attr("x1", 10)
+				.attr("y1", 10)
+				.attr("x2", 190)
+				.attr("y2", 190)
+				.attr("stroke", "teal")
+				.attr("stroke-width", 2);
+
+			svg.append("line")
+				.attr("x1", 190)
+				.attr("y1", 190)
+				.attr("x2", 400)
+				.attr("y2", 0)
+				.attr("stroke", "orange")
+				.attr("stroke-width", 2);
+
+			svg.append("rect")
+				.attr("x", 200)
+				.attr("y", 10)
+				.attr("width", 100)
+				.attr("height", 100)
+				.attr("fill", "salmon");
+
+			svg.append("circle")
+				.attr("cx", 300)
+				.attr("cy", 140)
+				.attr("r", 50)
+				.attr("fill", "magenta");
+
+			svg.append("text")
+				.attr("x", 250)
+				.attr("y", 100)
+				.attr("fill", "charcoal")
+				.attr("font-size", 36)
+				.attr("font-weight", "bold")
+				.text("Lorem ipsum");
+			
+		</script>
+	</body>
+</html>

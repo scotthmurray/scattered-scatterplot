@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>D3: Using data values</title>
+		<script type="text/javascript" src="d3.v3.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+		
+			//
+			//	Using a simple array of numeric values
+			//
+
+			var numbers = [ 5, 10, 15, 20, 25 ];
+			
+			d3.select("body").selectAll("h3")
+				.data(numbers)
+				.enter()
+				.append("h3")
+				.text(function(d) { return d; });
+
+
+
+			//
+			//	Using an array of *objects*, each with multiple values
+			//
+
+			var animals = [ 
+				{ animal: "cat", type: "mammal" },
+				{ animal: "snake", type: "reptile" },
+				{ animal: "warbler", type: "bird" }
+			];
+			
+			d3.select("body").selectAll("p")
+				.data(animals)
+				.enter()
+				.append("p")
+				.text(function(d) {
+					return "A " + d.animal + " is a " + d.type;
+				});
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>D3: Transitions</title>
+		<script type="text/javascript" src="d3.v3.js"></script>
+		<style type="text/css">
+
+			body {
+				background-color: gray;
+			}
+
+			svg {
+				background-color: white;
+			}
+
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			//Width and height
+			var w = 500;
+			var h = 100;
+			
+			var dataset = [
+							{
+								x: 5,
+								y: 20,
+								r: 10
+							},
+							{
+								x: 480,
+								y: 90,
+								r: 20
+							},
+							{
+								x: 250,
+								y: 50,
+								r: 15
+							},
+							{
+								x: 100,
+								y: 33,
+								r: 7
+							},
+							{
+								x: 330,
+								y: 95,
+								r: 18
+							},
+							{
+								x: 410,
+								y: 12,
+								r: 19
+							},
+							{
+								x: 475,
+								y: 44,
+								r: 25
+							},
+							{
+								x: 25,
+								y: 67,
+								r: 12
+							},
+							{
+								x: 85,
+								y: 21,
+								r: 5
+							},
+							{
+								x: 220,
+								y: 88,
+								r: 3
+							}
+						  ];
+	
+			//Create SVG element
+			var svg = d3.select("body")
+						.append("svg")
+						.attr("width", w)
+						.attr("height", h);
+
+			svg.selectAll("circle")
+			   .data(dataset)
+			   .enter()
+			   .append("circle")
+			   .attr("cx", function(d, i) {
+					return d.x;
+			   })
+			   .attr("cy", h)
+			   .attr("r", 1)
+			   .transition()
+			   .duration(2000)
+			   .attr("cy", function(d) {
+				   return d.y;
+			   })
+			   .attr("r", function(d) {
+				   return d.r;
+			   });
+			
+		</script>
+	</body>
+</html>
