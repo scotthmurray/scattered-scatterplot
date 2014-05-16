@@ -1,6 +1,8 @@
 # scattered-scatterplot
 
-These code examples are for the workshop “From Scattered to Scatterplot: An Introduction to [d3.js](http://d3js.org),” led by Scott Murray.  The workshop will be offered on:
+These code examples accompany the video course “[An Introduction to d3.js: From Scattered to Scatterplot](http://shop.oreilly.com/product/110000632.do)”.
+
+These examples have also been used for similar workshops, which were presented on:
 
 - 2014 January 8 as an [O’Reilly Webcast](http://oreillynet.com/pub/e/2952)
 - 2014 February 11 at the [Strata Conference](http://strataconf.com/strata2014/public/schedule/detail/32866) in Santa Clara
