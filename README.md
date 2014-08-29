@@ -5,8 +5,8 @@ These code examples accompany the video course “[An Introduction to d3.js: Fro
 These examples have also been used for similar workshops, which were presented on:
 
 - 2014 January 8 as an [O’Reilly Webcast](http://oreillynet.com/pub/e/2952)
-- 2014 February 11 at the [Strata Conference](http://strataconf.com/strata2014/public/schedule/detail/32866) in Santa Clara
-- 2014 August 29 at [The Graphical Web](http://graphicalweb.org/2014/)
+- 2014 February 11 at the [Strata Conference](http://strataconf.com/strata2014/public/schedule/detail/32866) in Santa Clara, California
+- 2014 August 29 at [The Graphical Web](http://graphicalweb.org/2014/) in Winchester, England
 
 Inline versions of these examples are also hosted on Atlas (no download required):
 
